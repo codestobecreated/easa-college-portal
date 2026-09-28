@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>About Us | EASA College of Engineering and Technology</title>
+    <style>
+        .dropdown:hover .dropdown-menu { display: block; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Main Navigation -->
+    <nav id="mainNav" class="bg-[#011a6d] shadow-2xl sticky top-0 w-full z-50 transition-all duration-300 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 md:h-24">
+          <div class="flex-shrink-0">
+            <a href="index.html" class="flex items-center">
+              <img class="h-12 md:h-16 brightness-0 invert" src="easa-logo.png" alt="EASA Logo" />
+            </a>
+          </div>
+          
+          <!-- Desktop Menu -->
+          <div class="hidden lg:block">
+            <div class="ml-10 flex items-center space-x-2 uppercase text-xs tracking-widest font-bold text-white/90">
+              <a href="index.html" class="px-4 py-2 hover:text-yellow-400 transition-all">Home</a>
+              <div class="relative dropdown group">
+                <button class="px-4 py-2 text-yellow-400 flex items-center transition-all group-hover:bg-white/10 rounded-lg border-b-2 border-yellow-500">
+                  About Us <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="dropdown-menu absolute hidden pt-2 w-64 left-0">
+                  <div class="bg-blue-900 shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-2xl border border-white/10 py-3 overflow-hidden backdrop-blur-xl">
+                    <a href="about.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white bg-white/5">About College</a>
+                    <a href="#" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">Vision & Mission</a>
+                    <a href="#" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">Management</a>
+                  </div>
+                </div>
+              </div>
+              <div class="relative dropdown group">
+                <button class="px-4 py-2 hover:text-yellow-400 flex items-center transition-all group-hover:bg-white/10 rounded-lg">
+                  Programmes <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="dropdown-menu absolute hidden pt-2 w-80 left-0">
+                  <div class="bg-blue-900 shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-2xl border border-white/10 py-3 overflow-hidden backdrop-blur-xl">
+                    <a href="cyber-security.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.E. Cyber Security</a>
+                    <a href="ai-ds.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.Tech AI & Data Science</a>
+                    <a href="agriculture.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.Tech Agriculture</a>
+                    <a href="cse.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.E. Computer Science</a>
+                  </div>
+                </div>
+              </div>
+              <a href="placements.html" class="px-4 py-2 hover:text-yellow-400 transition-all">Placements</a>
+              <a href="#" class="ml-6 bg-yellow-500 text-blue-900 px-8 py-4 rounded-xl hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-xl flex items-center font-black" onclick="toggleModal()">
+                Apply Now <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <div class="lg:hidden flex items-center">
+            <button onclick="toggleMobileMenu()" class="text-white hover:text-yellow-400 focus:outline-none p-2 bg-white/10 rounded-lg">
+              <svg id="menuIcon" class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Hero Section -->
+    <div class="relative pt-20 h-[300px] bg-blue-900 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 text-white">
+            <h1 class="text-5xl font-extrabold">About the College</h1>
+            <p class="text-xl mt-4 opacity-80 text-yellow-400">Excellence in Technical Education</p>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 py-20">
+        <div class="flex flex-col md:flex-row gap-16 items-center mb-24">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-900 mb-8">Our Legacy</h2>
+                <div class="space-y-6 text-gray-600 text-lg leading-relaxed">
+                    <p>Established by EASA Foundations, Coimbatore, EASA College of Engineering and Technology is dedicated to providing high-quality instruction and training in the fields of engineering and technology.</p>
+                    <p>Our institution is a Sourastrian minority institution with a futuristic and global outlook, preparing students for the challenges of the modern professional world.</p>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="c.jpg" class="rounded-3xl shadow-2xl" alt="Campus">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-10 rounded-3xl shadow-xl border-b-8 border-blue-900">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Our Vision</h3>
+                <p class="text-gray-600">To be a premier institution that creates innovative leaders for the global society.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-xl border-b-8 border-yellow-500">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Our Mission</h3>
+                <p class="text-gray-600">To impart quality education and foster research and development in all spheres of learning.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-xl border-b-8 border-blue-900">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Core Values</h3>
+                <p class="text-gray-600">Excellence, Integrity, Innovation, and Social Responsibility in all our endeavors.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-900 text-white/40 py-12 text-center">
+        <p>© 2024 EASA College. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Apply Now Modal -->
+    <div id="applyModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+      <div class="bg-white rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl">
+        <div class="bg-blue-900 p-6 text-white flex justify-between items-center">
+          <h3 class="text-2xl font-bold">Admission Inquiry</h3>
+          <button onclick="toggleModal()" class="text-white/60 hover:text-white text-3xl">&times;</button>
+        </div>
+        <form class="p-8 space-y-4">
+          <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border">
+          <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-xl border">
+          <button class="w-full bg-yellow-500 text-blue-900 font-bold py-4 rounded-xl">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function toggleModal() {
+        document.getElementById('applyModal').classList.toggle('hidden');
+      }
+    </script>
+</body>
+</html>

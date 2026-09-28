@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>EASA College of Engineering and Technology</title>
+    <style>
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <!-- Top Bar -->
+    <div class="bg-[#011a6d] text-white text-xs py-2 hidden md:block">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="flex items-center space-x-6">
+          <a href="tel:+919000000000" class="flex items-center hover:text-yellow-400 transition-all">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.12.45 2.33.69 3.58.69a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.24 2.46.69 3.58a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>
+            +91 90000 00000
+          </a>
+          <a href="mailto:info@easacollege.com" class="flex items-center hover:text-yellow-400 transition-all">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            info@easacollege.com
+          </a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="hover:text-yellow-400 transition-all">FB</a>
+          <a href="#" class="hover:text-yellow-400 transition-all">TW</a>
+          <a href="#" class="hover:text-yellow-400 transition-all">IG</a>
+          <a href="#" class="hover:text-yellow-400 transition-all">LI</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav id="mainNav" class="bg-[#011a6d] shadow-2xl sticky top-0 w-full z-50 transition-all duration-300 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 md:h-24">
+          <div class="flex-shrink-0">
+            <a href="index.html" class="flex items-center">
+              <img class="h-12 md:h-16" src="easa-logo.png" alt="EASA Logo" />
+            </a>
+          </div>
+          
+          <!-- Desktop Menu -->
+          <div class="hidden lg:block">
+            <div class="ml-10 flex items-center space-x-2 uppercase text-xs tracking-widest font-bold text-white/90">
+              <a href="index.html" class="px-4 py-2 text-yellow-400 border-b-2 border-yellow-500">Home</a>
+              <div class="relative dropdown group">
+                <button class="px-4 py-2 hover:text-yellow-400 flex items-center transition-all group-hover:bg-white/10 rounded-lg">
+                  About Us <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="dropdown-menu absolute hidden pt-2 w-64 left-0">
+                  <div class="bg-blue-900 shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-2xl border border-white/10 py-3 overflow-hidden backdrop-blur-xl">
+                    <a href="about.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">About College</a>
+                    <a href="#" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">Vision & Mission</a>
+                    <a href="#" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">Management</a>
+                  </div>
+                </div>
+              </div>
+              <div class="relative dropdown group">
+                <button class="px-4 py-2 hover:text-yellow-400 flex items-center transition-all group-hover:bg-white/10 rounded-lg">
+                  Programmes <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="dropdown-menu absolute hidden pt-2 w-80 left-0">
+                  <div class="bg-blue-900 shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-2xl border border-white/10 py-3 overflow-hidden backdrop-blur-xl">
+                    <a href="cyber-security.html" class="px-6 py-4 hover:bg-white/10 block font-bold border-b border-white/5 transition-all hover:pl-8 text-white">B.E. Cyber Security</a>
+                    <a href="ai-ds.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.Tech AI & Data Science</a>
+                    <a href="agriculture.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.Tech Agriculture</a>
+                    <a href="cse.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.E. Computer Science</a>
+                  </div>
+                </div>
+              </div>
+              <a href="placements.html" class="px-4 py-2 hover:text-yellow-400 transition-all">Placements</a>
+              <a href="#" class="px-4 py-2 hover:text-yellow-400 transition-all">Student Life</a>
+              <a href="#" class="ml-6 bg-yellow-500 text-blue-900 px-8 py-4 rounded-xl hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-xl flex items-center font-black" onclick="toggleModal()">
+                Apply Now <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <div class="lg:hidden flex items-center">
+            <button onclick="toggleMobileMenu()" class="text-white hover:text-yellow-400 focus:outline-none p-2 bg-white/10 rounded-lg">
+              <svg id="menuIcon" class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div id="mobileMenu" class="lg:hidden fixed inset-0 z-[100] bg-blue-900/95 backdrop-blur-lg hidden translate-x-full transition-transform duration-300">
+        <div class="flex flex-col h-full p-8">
+          <div class="flex justify-between items-center mb-12">
+            <img class="h-10 invert brightness-0" src="easa-logo.png" alt="Logo">
+            <button onclick="toggleMobileMenu()" class="text-white text-4xl">&times;</button>
+          </div>
+          <div class="flex flex-col space-y-6 text-2xl font-bold text-white uppercase tracking-wider">
+            <a href="index.html" class="text-yellow-400">Home</a>
+            <a href="about.html">About</a>
+            <a href="#" class="flex justify-between items-center">Programmes <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
+            <a href="placements.html">Placements</a>
+            <a href="#">Admission</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="mt-auto pt-8 border-t border-white/20">
+            <button onclick="toggleModal(); toggleMobileMenu();" class="w-full bg-yellow-500 text-blue-900 py-5 rounded-2xl text-xl font-bold">Apply Online Now</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Video Section -->
+    <div class="relative w-full h-[80vh] overflow-hidden">
+      <img src="video.jpeg" class="absolute inset-0 w-full h-full object-cover" alt="EASA Campus Background">
+      <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+          <h2 class="text-white text-2xl md:text-4xl font-bold mb-4 tracking-wider uppercase">Welcome to EASA</h2>
+          <h1 class="text-white text-4xl md:text-7xl font-extrabold mb-8 leading-tight">Shaping the Future of Engineering</h1>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#" class="bg-yellow-500 text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-xl">Admissions Open 2024-25</a>
+            <a href="#programmes" class="bg-white/20 backdrop-blur-md text-white border-2 border-white/30 px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition-all">Explore Programmes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <!-- Introduction -->
+      <div class="text-center mb-20">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-8">Best Engineering College in Coimbatore</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="text-left space-y-6 text-gray-600 text-lg leading-relaxed">
+            <p>
+              The College was established by EASA Foundations, Coimbatore, a public
+              charitable and educational trust, under the Chairmanship of its
+              Managing Trustee, <span class="font-bold text-blue-800">Thiru.T.D.Eswaramoorthy</span>. The College is a
+              Sourastrian minority institution.
+            </p>
+            <p>
+              Our objective is to impart high-quality instruction and training and foster research in
+              the fields of science, engineering, technology and management by
+              establishing educational institutions with a futuristic and global outlook.
+            </p>
+            <p>
+              Well connected by air, rail and road to all major cities in India, it
+              offers many advantages in terms of its strong science and technology
+              base and abundant educational resources.
+            </p>
+          </div>
+          <div class="relative">
+             <div class="aspect-video bg-blue-100 rounded-2xl overflow-hidden shadow-2xl">
+                <img src="c.jpg" alt="Campus" class="w-full h-full object-cover">
+             </div>
+             <div class="absolute -bottom-6 -right-6 bg-yellow-500 p-8 rounded-2xl text-blue-900 font-bold shadow-xl hidden md:block">
+                <div class="text-4xl">15+</div>
+                <div class="text-sm uppercase">Years of Excellence</div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Programmes Section -->
+      <section id="programmes" class="mb-24">
+        <div class="flex justify-between items-end mb-12">
+          <div>
+            <h2 class="text-3xl font-bold text-blue-900">Academic Programmes</h2>
+            <p class="text-gray-500 mt-2">Discover your passion in our diverse range of courses</p>
+          </div>
+          <a href="#" class="text-blue-600 font-bold flex items-center hover:underline">
+            View All Courses <svg class="ml-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Cyber Security Card -->
+          <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-100">
+            <div class="relative h-64 overflow-hidden">
+              <img src="sec.jpeg" alt="Cyber Security" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent flex items-end p-6">
+                <span class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-xs font-bold">B.E.</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 transition-colors">Cyber Security</h3>
+              <p class="text-gray-600 mb-6 line-clamp-2">Master the art of defending digital infrastructure from evolving cyber threats and data breaches.</p>
+              <a href="cyber-security.html" class="inline-flex items-center text-blue-800 font-bold hover:gap-2 transition-all">
+                Learn More <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- AI Card -->
+          <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-100">
+            <div class="relative h-64 overflow-hidden">
+              <img src="civil.jpg" alt="AI & DS" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent flex items-end p-6">
+                <span class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-xs font-bold">B.Tech</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 transition-colors">AI & Data Science</h3>
+              <p class="text-gray-600 mb-6 line-clamp-2">Explore the frontiers of intelligence and data analytics to solve complex real-world problems.</p>
+              <a href="#" class="inline-flex items-center text-blue-800 font-bold hover:gap-2 transition-all">
+                Learn More <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Agriculture Card -->
+          <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-100">
+            <div class="relative h-64 overflow-hidden">
+              <img src="agriculture.jpg" alt="Agriculture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent flex items-end p-6">
+                <span class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-xs font-bold">B.Tech</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 transition-colors">Agriculture</h3>
+              <p class="text-gray-600 mb-6 line-clamp-2">Innovate the future of farming with modern engineering techniques and sustainable practices.</p>
+              <a href="#" class="inline-flex items-center text-blue-800 font-bold hover:gap-2 transition-all">
+                Learn More <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brands/Partners Scroll -->
+      <section class="mb-24 py-16 bg-gray-50 rounded-[4rem] border border-gray-100 px-8">
+        <h5 class="text-center text-gray-500 uppercase tracking-widest text-sm font-bold mb-12 italic">World-class brands that our graduates have gone to work for</h5>
+        <div class="flex overflow-hidden space-x-16 group">
+          <div class="flex space-x-16 animate-loop-scroll">
+            <img src="1.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="2.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="3.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="4.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="5.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="6.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="7.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="8.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+          </div>
+          <div class="flex space-x-16 animate-loop-scroll" aria-hidden="true">
+            <img src="1.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="2.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="3.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="4.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="5.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="6.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="7.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+            <img src="8.jpg" class="h-12 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievement Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-blue-900 group hover:-translate-y-2 transition-all duration-300">
+           <div class="h-48 overflow-hidden rounded-2xl mb-6">
+              <img src="c.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-all">
+           </div>
+           <h3 class="text-xl font-bold text-blue-900 mb-4">Strategic Location</h3>
+           <p class="text-gray-600 mb-6">Well connected by Air, Railway and Road to all major cities in India, providing exposure to the industrial hub.</p>
+           <button class="bg-blue-50 text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-blue-900 hover:text-white transition-all">Learn More</button>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-yellow-500 group hover:-translate-y-2 transition-all duration-300">
+           <div class="h-48 overflow-hidden rounded-2xl mb-6">
+              <img src="easa-mou-singed.webp" class="w-full h-full object-cover group-hover:scale-110 transition-all">
+           </div>
+           <h3 class="text-xl font-bold text-blue-900 mb-4">IIT Palakkad MoU</h3>
+           <p class="text-gray-600 mb-6">Exclusive MoU signed with IIT Palakkad-IHub Foundation on April 10, 2023 for research and innovation.</p>
+           <button class="bg-yellow-50 text-yellow-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-500 hover:text-blue-900 transition-all">Explore MoU</button>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-blue-900 group hover:-translate-y-2 transition-all duration-300">
+           <div class="h-48 overflow-hidden rounded-2xl mb-6">
+              <img src="g.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-all">
+           </div>
+           <h3 class="text-xl font-bold text-blue-900 mb-4">Academic Success</h3>
+           <p class="text-gray-600 mb-6">Improving academic outcomes for all students to ensure their success in school and professional life.</p>
+           <button class="bg-blue-50 text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-blue-900 hover:text-white transition-all">Our Achievers</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
+        <div class="space-y-6">
+          <img src="easa-logo.png" class="h-12 mx-auto md:mx-0 invert brightness-0" />
+          <p class="text-blue-200">Excellence in Engineering and Technology Education since inception.</p>
+        </div>
+        <div>
+          <h4 class="text-yellow-500 font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+          <ul class="space-y-4 text-blue-100">
+            <li><a href="#" class="hover:text-yellow-400 transition-all">About Us</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-all">Admissions</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-all">Placements</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-all">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-yellow-500 font-bold mb-6 uppercase tracking-widest text-sm">Contact Us</h4>
+          <p class="text-blue-100">NH-47, Palakkad Main Road, Navakkarai, Coimbatore - 641 105</p>
+          <p class="mt-4 text-blue-100">info@easacollege.com</p>
+        </div>
+        <div>
+          <h4 class="text-yellow-500 font-bold mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+          <div class="flex">
+            <input type="email" placeholder="Your Email" class="bg-blue-800 border-none px-4 py-2 rounded-l-lg w-full text-white placeholder-blue-300">
+            <button class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-r-lg font-bold">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-blue-800 text-center text-blue-400 text-sm">
+        <p>© 2024 EASA College of Engineering and Technology. Designed with ❤️ by Antigravity.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Icons -->
+    <div class="fixed right-0 top-1/2 -translate-y-1/2 z-[60] flex flex-col gap-2">
+      <a href="tel:+919000000000" class="bg-blue-600 text-white p-4 rounded-l-2xl shadow-2xl hover:pl-6 transition-all flex items-center gap-3 group">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.12.45 2.33.69 3.58.69a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.24 2.46.69 3.58a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 font-bold">Call Us</span>
+      </a>
+      <a href="https://wa.me/919000000000" class="bg-green-500 text-white p-4 rounded-l-2xl shadow-2xl hover:pl-6 transition-all flex items-center gap-3 group">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.107l-.696 2.54 2.597-.681a5.734 5.734 0 002.841.754h.002c3.182 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.72-5.769-5.72zm3.42 8.12c-.149.42-.859.771-1.189.82-.33.05-.671.07-1.45-.25-1.06-.44-1.74-1.54-1.79-1.62-.05-.08-.903-1.203-.903-2.296 0-1.093.571-1.631.774-1.845.203-.214.445-.268.594-.268.15 0 .301.001.431.006.136.006.314-.05.493.39.18.44.616 1.5.669 1.61.053.11.089.239.016.383-.074.145-.11.235-.22.363-.11.127-.224.23-.332.355-.114.135-.236.27-.101.503.135.233.605 1 1.296 1.615.892.792 1.642 1.037 1.877 1.154.235.117.372.097.51-.06.137-.158.591-.687.75-1.23.158-.544.316-.46.538-.376.221.083 1.402.661 1.643.781.241.12.402.18.461.28.059.1.059.58-.091 1z"/></svg>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 font-bold">WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- Apply Now Modal -->
+    <div id="applyModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+      <div class="bg-white rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl transform transition-all">
+        <div class="bg-blue-900 p-6 text-white flex justify-between items-center">
+          <h3 class="text-2xl font-bold">Admission Inquiry</h3>
+          <button onclick="toggleModal()" class="text-white/60 hover:text-white">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <form class="p-8 space-y-4">
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1">Full Name</label>
+            <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-900 focus:ring-0 outline-none transition-all" placeholder="Enter your name">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1">Phone Number</label>
+            <input type="tel" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-900 focus:ring-0 outline-none transition-all" placeholder="Enter your mobile number">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1">Select Programme</label>
+            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-900 focus:ring-0 outline-none transition-all">
+              <option>B.E. Cyber Security</option>
+              <option>B.Tech AI & Data Science</option>
+              <option>B.Tech Agriculture</option>
+              <option>B.E. Computer Science</option>
+              <option>MBA / M.E.</option>
+            </select>
+          </div>
+          <button type="submit" class="w-full bg-yellow-500 text-blue-900 font-bold py-4 rounded-xl shadow-lg hover:bg-yellow-400 transition-all mt-6">Submit Application</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+        setTimeout(() => {
+          menu.classList.toggle('translate-x-full');
+          menu.classList.toggle('translate-x-0');
+        }, 10);
+      }
+
+      function toggleModal() {
+        const modal = document.getElementById('applyModal');
+        modal.classList.toggle('hidden');
+        if (!modal.classList.contains('hidden')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = 'auto';
+        }
+      }
+
+      // Add click listeners to all Apply Now buttons
+      document.querySelectorAll('a[href="#"], button').forEach(btn => {
+        if (btn.innerText.toLowerCase().includes('apply')) {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleModal();
+          });
+        }
+      });
+      // Reveal on scroll
+      window.addEventListener('scroll', () => {
+        const reveals = document.querySelectorAll('.reveal');
+        reveals.forEach(el => {
+          const windowHeight = window.innerHeight;
+          const revealTop = el.getBoundingClientRect().top;
+          const revealPoint = 150;
+          if (revealTop < windowHeight - revealPoint) {
+            el.classList.add('active');
+          }
+        });
+      });
+    </script>
+    <style>
+      .reveal {
+        position: relative;
+        transform: translateY(30px);
+        opacity: 0;
+        transition: all 1s ease;
+      }
+      .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      @keyframes loop-scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+      }
+      .animate-loop-scroll {
+        animation: loop-scroll 20s linear infinite;
+      }
+    </style>
+  </body>
+</html>

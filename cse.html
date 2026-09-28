@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>B.E. Computer Science & Engineering | EASA College</title>
+    <style>
+        .dropdown:hover .dropdown-menu { display: block; }
+        .hero-gradient { background: linear-gradient(135deg, rgba(1, 26, 109, 0.9) 0%, rgba(1, 26, 109, 0.6) 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Top Bar -->
+    <div class="bg-[#011a6d] text-white text-xs py-2 hidden md:block border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="flex items-center space-x-6">
+          <a href="tel:+919000000000" class="flex items-center hover:text-yellow-400 transition-all">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.12.45 2.33.69 3.58.69a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.24 2.46.69 3.58a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>
+            +91 90000 00000
+          </a>
+          <a href="mailto:info@easacollege.com" class="flex items-center hover:text-yellow-400 transition-all">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            info@easacollege.com
+          </a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="hover:text-yellow-400 transition-all">FB</a>
+          <a href="#" class="hover:text-yellow-400 transition-all">TW</a>
+          <a href="#" class="hover:text-yellow-400 transition-all">IG</a>
+          <a href="#" class="hover:text-yellow-400 transition-all">LI</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav id="mainNav" class="bg-[#011a6d] shadow-2xl sticky top-0 w-full z-50 transition-all duration-300 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 md:h-24">
+          <div class="flex-shrink-0">
+            <a href="index.html" class="flex items-center">
+              <img class="h-12 md:h-16 brightness-0 invert" src="easa-logo.png" alt="EASA Logo" />
+            </a>
+          </div>
+          
+          <!-- Desktop Menu -->
+          <div class="hidden lg:block">
+            <div class="ml-10 flex items-center space-x-2 uppercase text-xs tracking-widest font-bold text-white/90">
+              <a href="index.html" class="px-4 py-2 hover:text-yellow-400 transition-all">Home</a>
+              <div class="relative dropdown group">
+                <button class="px-4 py-2 hover:text-yellow-400 flex items-center transition-all group-hover:bg-white/10 rounded-lg">
+                  About Us <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="dropdown-menu absolute hidden pt-2 w-64 left-0">
+                  <div class="bg-blue-900 shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-2xl border border-white/10 py-3 overflow-hidden backdrop-blur-xl">
+                    <a href="about.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">About College</a>
+                    <a href="#" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">Vision & Mission</a>
+                    <a href="#" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">Management</a>
+                  </div>
+                </div>
+              </div>
+              <div class="relative dropdown group">
+                <button class="px-4 py-2 text-yellow-400 flex items-center transition-all group-hover:bg-white/10 rounded-lg border-b-2 border-yellow-500">
+                  Programmes <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="dropdown-menu absolute hidden pt-2 w-80 left-0">
+                  <div class="bg-blue-900 shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-2xl border border-white/10 py-3 overflow-hidden backdrop-blur-xl">
+                    <a href="cyber-security.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.E. Cyber Security</a>
+                    <a href="ai-ds.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.Tech AI & Data Science</a>
+                    <a href="agriculture.html" class="px-6 py-4 hover:bg-white/10 block transition-all hover:pl-8 text-white">B.Tech Agriculture</a>
+                    <a href="cse.html" class="px-6 py-4 hover:bg-white/10 block font-bold border-b border-white/5 transition-all hover:pl-8 text-white bg-white/5">B.E. Computer Science</a>
+                  </div>
+                </div>
+              </div>
+              <a href="placements.html" class="px-4 py-2 hover:text-yellow-400 transition-all">Placements</a>
+              <a href="#" class="ml-6 bg-yellow-500 text-blue-900 px-8 py-4 rounded-xl hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-xl flex items-center font-black" onclick="toggleModal()">
+                Apply Now <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <div class="lg:hidden flex items-center">
+            <button onclick="toggleMobileMenu()" class="text-white hover:text-yellow-400 focus:outline-none p-2 bg-white/10 rounded-lg">
+              <svg id="menuIcon" class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div id="mobileMenu" class="lg:hidden fixed inset-0 z-[100] bg-blue-900/95 backdrop-blur-lg hidden translate-x-full transition-transform duration-300">
+        <div class="flex flex-col h-full p-8">
+          <div class="flex justify-between items-center mb-12">
+            <img class="h-10 invert brightness-0" src="easa-logo.png" alt="Logo">
+            <button onclick="toggleMobileMenu()" class="text-white text-4xl">&times;</button>
+          </div>
+          <div class="flex flex-col space-y-6 text-2xl font-bold text-white uppercase tracking-wider">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#" class="flex justify-between items-center text-yellow-400">Programmes <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
+            <a href="placements.html">Placements</a>
+            <a href="#" onclick="toggleModal(); toggleMobileMenu();">Admission</a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Hero -->
+    <div class="relative pt-20 h-[400px] flex items-center overflow-hidden">
+        <img src="sec.jpeg" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative max-w-7xl mx-auto px-4 text-white">
+            <h1 class="text-5xl font-extrabold mb-4">B.E. Computer Science</h1>
+            <p class="text-xl max-w-2xl opacity-90">Developing world-class engineers for the global software industry.</p>
+        </div>
+    </div>
+
+    <section class="py-20 max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-900 mb-6">Course Overview</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">Computer Science and Engineering is a broad field that covers everything from hardware design to software development and artificial intelligence.</p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg> Software Development</li>
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg> Cloud Computing</li>
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg> Database Management</li>
+                </ul>
+            </div>
+            <div class="bg-blue-50 p-8 rounded-3xl border border-blue-100">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Placement Success</h3>
+                <p class="text-gray-600 mb-6">Our CSE graduates are placed in top MNCs like TCS, Infosys, Wipro, and Amazon with high salary packages.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white/60 py-12 text-center">
+        <p>© 2024 EASA College. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
